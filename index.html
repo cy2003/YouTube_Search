@@ -4,17 +4,22 @@
     <meta charset="utf-8">
     <title>YouTube Search</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- JQuery file needs to be before your script.js file -->
     <script src="js/script.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".fancybox").fancybox();
+      });
+    </script>
   </head>
   <body>
     <div id="container">
       <header>
         <h1>YouTube <span>Search</span></h1>
-        <p>
-          Search all YouTube videos
-        </p>
+        <p>Search all YouTube videos</p>
       </header>
         <section>
           <form id="search-form" name="search-form" onsubmit="return search()">
